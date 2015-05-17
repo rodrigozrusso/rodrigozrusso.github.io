@@ -1,3 +1,21 @@
-name: Flex
+
+# General Information
+# Basic information
+name: Rodrigo Russo
+author: Rodrigo Russo
+url: rodrigozrusso.com
+description: Engineering, Automation, Tools
+
 markdown: redcarpet
 highlighter: true
+
+# Tracking
+google_analytics_key: UA-62290727-1
+
+# Share
+aboutme: http://about.me/rodrigozrusso
+github: http://www.github.com/rodrigozrusso
+twitter: http://www.twitter.com/zrusso
+linkedin: http://www.linkedin.com/in/rodrigozrusso
+lanyrd: http://lanyrd.com/profile/rodrigozrusso/
+email: rodrigozrusso@gmail.com
