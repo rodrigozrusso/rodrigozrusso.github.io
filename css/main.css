@@ -275,6 +275,38 @@ a:hover {
   opacity: 0.7;
 }
 
+/** Social */
+#social-wrapper
+{
+  color:#5c646f;
+  padding:10px 0;
+  list-style-type: none;
+}
+
+#social-wrapper a
+{
+  font-size:18px;
+  text-indent:20px;
+}
+
+#social-wrapper ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#social-wrapper li
+{
+  font-size:18px;
+  text-indent:0;
+  word-spacing:10px;
+  float:left;
+}
+
+#social-wrapper a:hover
+{
+  color:#2d1e18;
+  transition:all .3s ease 0;
+}
 /*****************************************************************************/
 /*
 /* Colophon

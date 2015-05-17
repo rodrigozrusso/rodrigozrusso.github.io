@@ -18,17 +18,29 @@
       <!-- Google Fonts -->
       <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
     <div class="site">
       <div class="sidebar" id="sidebar">
         <div class="header">
           <h1 class="title"><a href="/"><img id="logo" src="{{ 'rodrigozrusso@gmail.com' | get_gravatar }}?s=100" /></a></h1>
-          <span class="tagline">A responsive Jekyll theme</span>
+          <span class="tagline">{{ site.description }}</span>
+        </div>
+        <div id="social-wrapper">
+          <ul>
+            <li> <a href="{{ site.aboutme }}"><i class="fa fa-male"></i></a></li>
+            <li> <a href="{{ site.twitter }}"><i class="fa fa-twitter-square"></i></a></li>
+            <li> <a href="{{ site.linkedin }}"><i class="fa fa-linkedin-square"></i></a> </li>
+          </ul>
+          <ul>
+            <li> <a href="{{ site.github }}"><i class="fa fa-github-square"></i></a></li>
+            <li> <a href="{{ site.lanyrd }}"><i class="fa fa-microphone"></i></a></li>
+          </ul>
         </div>
         <div class="posts">
           <ul class="posts-list">
-            {% for post in site.posts %}
+            {% for post in site.posts limit: 3 %}
               <li class="post-link">
                 <a class="post-title" href="{{ post.url }}">
                   <span class="post-date">{{ post.date | date_to_string }}</span>
@@ -39,11 +51,6 @@
           </ul>
         </div>
         <div class="footer">
-          <span id="footer-links">
-            <a href="" class="footer-link">About</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">Twitter</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">GitHub</a>
-          </span>
         </div>
       </div>
 
@@ -51,5 +58,6 @@
 
     </div>
     <script src="/scripts/responsive.js" type="text/javascript"></script>
+    {% include _analytics.html %}
   </body>
 </html>
