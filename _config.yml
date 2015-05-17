@@ -6,9 +6,6 @@ author: Rodrigo Russo
 url: rodrigozrusso.com
 description: Engineering, Automation, Tools
 
-markdown: redcarpet
-highlighter: true
-
 # Tracking
 google_analytics_key: UA-62290727-1
 
