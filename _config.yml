@@ -1,5 +1,5 @@
 
-# General Information
+
 # Basic information
 name: Rodrigo Russo
 author: Rodrigo Russo
@@ -19,3 +19,8 @@ twitter: http://www.twitter.com/zrusso
 linkedin: http://www.linkedin.com/in/rodrigozrusso
 lanyrd: http://lanyrd.com/profile/rodrigozrusso/
 email: rodrigozrusso@gmail.com
+
+# Plugins
+gems:
+- redcarpet
+- digest
