@@ -4,5 +4,5 @@ gem 'redcarpet'
 gem 'jekyll'
 
 group :jekyll_plugins do
-   gem "digest"
+   gem 'jekyll-sitemap'
 end

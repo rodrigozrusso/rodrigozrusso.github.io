@@ -20,4 +20,4 @@ email: rodrigozrusso@gmail.com
 # Plugins
 gems:
 - redcarpet
-- digest
+- jekyll-sitemap
