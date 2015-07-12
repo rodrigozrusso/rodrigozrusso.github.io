@@ -16,6 +16,7 @@ twitter: http://www.twitter.com/zrusso
 linkedin: http://www.linkedin.com/in/rodrigozrusso
 lanyrd: http://lanyrd.com/profile/rodrigozrusso/
 email: rodrigozrusso@gmail.com
+feed: /feed.xml
 
 # Plugins
 gems:

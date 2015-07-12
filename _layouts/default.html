@@ -19,7 +19,6 @@
       <!-- Google Fonts -->
       <link href="/css/font-awesome.min.css" rel="stylesheet">
       <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Trebuchet:300,400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="site">
@@ -37,6 +36,7 @@
           <ul>
             <li> <a href="{{ site.github }}"><i class="fa fa-github-square"></i></a></li>
             <li> <a href="{{ site.lanyrd }}"><i class="fa fa-microphone"></i></a></li>
+            <li> <a href="{{ site.feed }}"><i class="fa fa-rss"></i></a></li>
           </ul>
         </div>
         <div class="posts">
@@ -44,7 +44,6 @@
             {% for post in site.posts limit: 3 %}
               <li class="post-link">
                 <a class="post-title" href="{{ post.url }}">
-                  <span class="post-date">{{ post.date | date_to_string }}</span>
                   {{ post.title }}
                 </a>
               </li>
