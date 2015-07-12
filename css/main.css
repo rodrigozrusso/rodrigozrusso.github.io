@@ -18,7 +18,7 @@ html, body {
 body {
   color: #4a4a4a;
   background-color: #FFFFFF;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Trebuchet', Arial, sans-serif;
   font-weight: 400;
   font-size: 0.85em;
   overflow: hidden;
@@ -145,7 +145,6 @@ a:hover {
   margin-bottom: 0.35em;
   font-size: 3em;
   line-height: 40px;
-  text-transform: uppercase;
 }
 
 .post {
