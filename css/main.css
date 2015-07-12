@@ -176,7 +176,7 @@ a:hover {
 }
 
 .post p {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: 'Trebuchet', Arial, sans-serif;
   font-size: 17px;
   margin-bottom: 1.45em;
   text-align: justify;
@@ -206,6 +206,15 @@ a:hover {
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+/* quotation */
+.post blockquote {
+  color: #616161;
+  border-left: .33em solid #dcdcdc;
+  background-color: #f6f6f6;
+  margin-bottom: 1.33333em;
+  padding: 0 20px;
 }
 
 /*****************************************************************************/
