@@ -123,11 +123,7 @@ a:hover {
 /*****************************************************************************/
 
 #date {
-  font-size: 16px;
-  padding-top: 0.25em;
-  margin-bottom: 2em;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-size: 14px;
   color: #787878;
 }
 
@@ -138,6 +134,17 @@ a:hover {
 
 #info-container {
   margin-top: 3em;
+}
+
+#info-container > div.meta {
+  border: 1px solid #C9C6C3;
+  border-width: 1px 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 0 20px;
+  padding: 1px 0;
+  text-transform: uppercase;
 }
 
 #title {
@@ -255,9 +262,7 @@ a:hover {
 }
 
 .post-title {
-  font-weight: 600;
   font-size: 1.25em;
-  text-transform: uppercase;
 }
 
 .post-date {
@@ -286,8 +291,9 @@ a:hover {
 /** Social */
 #social-wrapper
 {
-  color:#5c646f;
-  padding:10px 0;
+  color: #5c646f;
+  padding: 10px 30px 10px 30px;
+  margin: 0 0 30px;
   list-style-type: none;
 }
 
