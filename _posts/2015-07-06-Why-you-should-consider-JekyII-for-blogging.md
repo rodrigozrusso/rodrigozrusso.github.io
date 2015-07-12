@@ -2,7 +2,7 @@
 layout: post
 title: Why you should consider JekyII for blogging
 date:   2015-07-06 10:00:00
-categories: jekyll, blog
+tags: jekyll, blog
 ---
 Inspired by Jakub Jedryszek on his post [“Why Programmers Should Have a Blog"](http://architects.dzone.com/articles/why-programmers-should-have), I decided to start write down somethings, and if you are a programmer, you should start too.
 

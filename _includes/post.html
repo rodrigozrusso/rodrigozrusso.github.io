@@ -5,7 +5,10 @@
   <div id="post-info">
     <div id="info-container">
       <h2 id="title">{{ page.title }}</h1>
-      <span id="date" class="fa fa-clock-o">&nbsp;{{ page.date | date_to_string }}</span>
+      <div class="meta">
+        <span id="date" class="fa fa-clock-o">&nbsp;{{ page.date | date_to_string }}</span>&nbsp;|&nbsp;
+        <span id="tags" class="fa fa-tags">&nbsp;{{ page.tags | array_to_sentence }}</span>
+      </div>
     </div>
   </div>
 
@@ -14,8 +17,7 @@
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on {{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
-      <span id="social">Find me on <a href="">Twitter</a>!</span>
+      <span id="social">Find me on <a href="{{ site.twitter }}">Twitter</a>!</span>
     </p>
   </div>
 </div>
