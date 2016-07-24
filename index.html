@@ -1,8 +1,12 @@
 ---
 layout: default
-title: Rodrigo Russo - Engineering | Automation | tools
+title: Rodrigo Russo - Software Engineering | Software Automation | Devops | Continuous Delivery
 ---
 
-{% assign page = site.posts.first %}
-{% assign content = page.content %}
-{% include post.html %}
+<h3>Posts</h3>
+{% for post in site.posts %}
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8"><a href="{{ post.url }}">{{ post.title }}</a></div>
+  <div class="col-xs-6 col-md-4">{{ post.date | date: "%B %e, %Y" }}</div>
+</div>
+{% endfor %}

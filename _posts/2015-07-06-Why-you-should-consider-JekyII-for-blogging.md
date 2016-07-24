@@ -2,11 +2,13 @@
 layout: post
 title: Why you should consider JekyII for blogging
 date:   2015-07-06 10:00:00
-tags: jekyll, blog
+tags:
+- jekyll
+- blog
 ---
 Inspired by Jakub Jedryszek on his post [“Why Programmers Should Have a Blog"](http://architects.dzone.com/articles/why-programmers-should-have), I decided to start write down somethings, and if you are a programmer, you should start too.
 
-So, if you start blogging you have a lot of options on the category “content management system” (CMS) to post your insights. 
+So, if you start blogging you have a lot of options on the category “content management system” (CMS) to post your insights.
 [Wordpress](https://wordpress.com/) and [Blogger](http://www.blogger.com) are the most popular, but wait a little bit until go deep on one these options.
 
 Get some minutes to try [JekyII](http://jekyllrb.com/) and as the original site says:
@@ -15,11 +17,11 @@ Get some minutes to try [JekyII](http://jekyllrb.com/) and as the original site 
 
 And you really need some minutes to do that. So I'll describe some reasons that you should start or migrate to JekyII instead of other options.
 
-### Here are some reasons:
+#### Here are some reasons:
 1. **Markdown**
 	- All your posts are written in plain text with [Markdown](https://en.wikipedia.org/wiki/Markdown).
-2. **On version control**
-	- You can keep everything on version control, what it's really nice, because you can track everything. 
+2. **In the version control**
+	- You can keep everything on version control, what it's really nice, because you can track everything.
 	Another thing on this terms is about [The Twelve Factors](http://12factor.net/), the first factor is about codebase, and as a programmer you really like to keep your stuffs in a revision control and we can say that we have a "blog as a code"...
 3. **Free hosting on Github**
 	- Yes, you can host your website/blog on Github for free.
@@ -55,9 +57,8 @@ Start blogging and enjoy it!
 	- [paid] [http://themeforest.net/category/static-site-generators/jekyll](http://themeforest.net/category/static-site-generators/jekyll)
 * Start your blog now:
 	- [http://jekyllbootstrap.com/](http://jekyllbootstrap.com/)
-* Free your self and migrate your blog: 
+* Free your self and migrate your blog:
 	- [http://jekyllrb.com/docs/migrations/](http://jekyllrb.com/docs/migrations/)
 * Plugins:
 	- [http://jekyllrb.com/docs/plugins/](http://jekyllrb.com/docs/plugins/)
 	- [http://www.jekyll-plugins.com/](http://www.jekyll-plugins.com/)
-

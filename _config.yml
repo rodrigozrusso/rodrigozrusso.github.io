@@ -4,19 +4,34 @@
 name: Rodrigo Russo
 author: Rodrigo Russo
 url: http://www.rodrigozrusso.com
-description: Engineering, Automation, Tools
+description: Software Engineering, Software Automation, Devops and Continuous Delivery.
 
 # Tracking
 google_analytics_key: UA-62290727-1
 
 # Share
-aboutme: http://about.me/rodrigozrusso
-github: http://www.github.com/rodrigozrusso
-twitter: http://www.twitter.com/zrusso
-linkedin: http://www.linkedin.com/in/rodrigozrusso
-lanyrd: http://lanyrd.com/profile/rodrigozrusso/
-email: rodrigozrusso@gmail.com
-feed: /feed.xml
+social:
+  - aboutme:
+    label: About.me
+    url: http://about.me/rodrigozrusso
+  - github:
+    label: Github
+    url: http://www.github.com/rodrigozrusso
+  - twitter:
+    label: Twitter
+    url: http://www.twitter.com/zrusso
+  - linkedin:
+    label: LinkedIn
+    url: http://www.linkedin.com/in/rodrigozrusso
+  - lanyrd:
+    label: Lanyrd
+    url: http://lanyrd.com/profile/rodrigozrusso/
+  - slideshare:
+    label: SlideShare
+    url: http://www.slideshare.net/zrusso
+  - feed:
+    label: Feed
+    url: /feed.xml
 
 # Plugins
 gems:

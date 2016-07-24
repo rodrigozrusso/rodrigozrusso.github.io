@@ -1,30 +1,29 @@
-<div class="content" id="home">
-  <div id="sidebar-button">
-    <img src="/images/sidebar-button.png">
-  </div>
-  <div id="post-info">
-    <div id="info-container">
-      <h2 id="title">{{ page.title }}</h1>
-      <div class="meta">
-        <span id="date" class="fa fa-clock-o">&nbsp;{{ page.date | date_to_string }}</span>&nbsp;|&nbsp;
-        <span id="tags" class="fa fa-tags">&nbsp;{{ page.tags | array_to_sentence }}</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="post">
-    {{ content }}
-  </div>
-  <div class="colophon">
-    <p>
-        <b>Liked it? Please, share it. 
-        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via=zrusso&amp;hashtags={{ page.tags }}">
-          <span class="fa fa-twitter">&nbsp;Click to Tweet (you can edit before post)</span>
-        </a>
-        </b>
-    </p>
-    <p>
-      <span id="social">Find me on <a href="{{ site.twitter }}">Twitter</a>!</span>
-    </p>
-  </div>
-</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-8 col-md-12 blog-main">
+    <div class="blog-post">
+      <h2 class="blog-post-title">{{ page.title }}</h2>
+      <p class="blog-post-meta">{{ page.date | date: "%B %e, %Y" }} by <a href="#">{{ site.author }}</a></p>
+      <hr>
+      {{ content }}
+      <p class="blog-post-share">
+          <b>Liked it? Please, share it.</b>
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via=zrusso&amp;hashtags={{ page.tags }}">
+              &nbsp;Click to Tweet (you can edit before post)
+          </a>
+      </p>
+    </div><!-- /.blog-post -->
+    {% if page.previous.url || if page.next.url %}
+    <hr>
+    <nav>
+      <ul class="pager">
+        {% if page.previous.url %}
+        <li><a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></li>
+        {% endif %}
+        {% if page.next.url %}
+        <li><a href="{{page.next.url}}">{{page.next.title}} &raquo;</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+    {% endif %}
+  </div><!-- /.blog-main -->
+</div><!-- /.row -->
