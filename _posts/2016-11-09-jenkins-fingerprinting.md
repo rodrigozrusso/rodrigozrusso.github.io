@@ -62,7 +62,7 @@ And the xml file contains the following data:
 
 From the Jenkins UI:
 
-![fingerprint one job]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_fingerprint_one_job.png)
+![fingerprint one job]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_fingerprint_one_job.png){: width="500px"}
 
 If this file is used for more than one build, you will see in the usages node, all the jobs/builds that are using this file.
 Something like that:
@@ -86,7 +86,7 @@ Where ranges stands for the build number, or the range of builds that this file 
 
 From the Jenkins UI:
 
-![fingerprint one job]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_fingerprint_two_jobs.png)
+![fingerprint one job]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_fingerprint_two_jobs.png){:height="100px"}
 
 ## How to implement it?
 
@@ -96,21 +96,21 @@ From the Jenkins Dashboard
 
 1. New Item
 
-	![Step1]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle-pipeline_step1.png)
+	![Step1]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle-pipeline_step1.png){:height="400px"}
 
 2. Give a name for your job, i.e: JobABC, and choose freestyle job.
 
-	![Step2]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle_step2.png)
+	![Step2]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle_step2.png){:height="100px"}
 
 3. In the *Post-build Actions* section, add the option "Record fingerprints of files to track usage"
 
-	![Step3]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle_step3.png)
+	![Step3]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle_step3.png){:height="300px"}
 
 4. Add name or a regex to the file that you want to keep tracking with fingerprint.
 
 	If you want to use this file in another job, you can add another build step, the "Archive the artifacts" and fill in the name like the fingerprint.
 
-	![Step4]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle_step4.png)
+	![Step4]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle_step4.png){:width="500px"}
 
 
 ### Jenkins Pipeline jobs
@@ -119,12 +119,12 @@ From the Jenkins Dashboard
 
 1. New Item
 
-	![Step1]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle-pipeline_step1.png)
+	![Step1]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_freestyle-pipeline_step1.png){:height="400px"}
 
 2. Give a name for your job, i.e: JobA_pipeline, and choose pipeline job.
 
 
-	![Step2]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_pipeline_step2.png)
+	![Step2]({{ site.url }}/assets/2016-11-09-jenkins-fingerprinting/jenkins_pipeline_step2.png){:width="300px"}
 
 3. Add groovy code to Archive & fingerprint the file:
 
