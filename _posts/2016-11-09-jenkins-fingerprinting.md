@@ -34,6 +34,7 @@ fingerprints
 ```
 
 And the xml file contains the following data:
+
 * Timestamp
 * Job name
 * Build number
